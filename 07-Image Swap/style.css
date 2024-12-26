@@ -1,0 +1,87 @@
+@font-face {
+  font-family:font11 ;
+  src: url(./new11.ttf);
+}
+body {
+  font-family: font11;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.img {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin: 10px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+} */
+
+button {
+  display: inline-block;
+  margin: 15px 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007BFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.img{
+  height: 300px;
+  width: 250px;
+  object-fit: center;
+}
+ 
+.img1,img2{
+    height: 300px;
+    width: 250px;
+    object-fit: cover;
+
+}
+button{
+  padding: 10px 20px;
+  font-size: 50px;
+  font-weight: 400;
+  color: blue;
+  border-radius: 5px;
+  border: none;
+}
+
+   */

@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: cursive;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to right,#fc5c7d, #6a82fb);
+}
+
+.calc{
+    width: 30%;
+    height: 60%;
+    background-color: transparent;
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+#ans{
+    width: 90%;
+    margin-top: 20px;
+    font-family: 'Loto sans-serif',sans-serif;
+    font-size: 2.5rem;
+    outline: none;
+    margin-left: 20px;
+    text-align: right;
+}
+
+.btn input[type='button']{
+    width: 90px;
+    padding: 2px;
+    margin: 4px;
+    position: relative;
+    left: 23px;
+    top: 20px;
+    height: 55px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease;
+    background-color: transparent;
+    border-radius: 6px;
+}
+.btn input[type='button']:hover{
+    background-color: black;
+    color: white;
+}
+@media screen and (max-width: 1200px) {
+    .calc {
+        width: 40%;
+        height: auto;
+        min-height: 70%;
+        padding-bottom: 25px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .calc {
+        width: 50%;
+        height: auto;
+        min-height: 65%;
+        padding-bottom: 25px;
+    }
+    
+    .btn input[type='button'] {
+        width: 75px;
+        height: 50px;
+        margin: 3px;
+        left: 20px;
+    }
+    
+    #ans {
+        font-size: 2.2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .calc {
+        width: 60%;
+        height: auto;
+        min-height: 60%;
+        padding-bottom: 25px;
+    }
+    
+    .btn input[type='button'] {
+        width: 65px;
+        height: 45px;
+        font-size: 14px;
+        left: 15px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .calc {
+        width: 85%;
+        height: auto;
+        padding: 20px 0 25px 0;
+    }
+    
+    #ans {
+        width: 85%;
+        margin-left: 15px;
+        font-size: 2rem;
+    }
+    
+    .btn input[type='button'] {
+        width: 60px;
+        height: 45px;
+        margin: 3px;
+        left: 12px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .calc {
+        width: 95%;
+        padding: 15px 0 25px 0;
+    }
+    
+    #ans {
+        width: 90%;
+        margin-left: 10px;
+        font-size: 1.8rem;
+    }
+    
+    .btn input[type='button'] {
+        width: 55px;
+        height: 40px;
+        margin: 2px;
+        left: 10px;
+        font-size: 13px;
+    }
+}

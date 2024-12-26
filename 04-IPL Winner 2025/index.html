@@ -1,0 +1,140 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPL Prediction</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        h1 {
+            color: #f39c12;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #3498db;
+        }
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            z-index: 1000;
+            display: none;
+        }
+        .popup h2 {
+            color: #27ae60;
+        }
+        .lights {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            animation: flash 1s infinite;
+        }
+        .light {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            animation: blink 1.5s infinite ease-in-out;
+        }
+        .light:nth-child(1) { top: 10%; left: 20%; background-color: red; animation-delay: 0.1s; }
+        .light:nth-child(2) { top: 30%; left: 70%; background-color: yellow; animation-delay: 0.3s; }
+        .light:nth-child(3) { top: 60%; left: 40%; background-color: green; animation-delay: 0.5s; }
+        .light:nth-child(4) { top: 80%; left: 80%; background-color: blue; animation-delay: 0.7s; }
+        .light:nth-child(5) { top: 50%; left: 10%; background-color: pink; animation-delay: 0.9s; }
+        @keyframes flash {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+    </style>
+</head>
+<body>
+    <h1>IPL Prediction 2024</h1>
+    <button onclick="predictWinner()">Predict Winner</button>
+
+    <div class="popup" id="popup">
+        <h2>Hurrah! 🎉</h2>
+        <p>The predicted winner is <span id="winner"></span>!</p>
+    </div>
+
+    <div class="lights">
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+        <div class="light"></div>
+    </div>
+
+    <script>
+        const teams = [
+            "Mumbai Indians",
+            "Chennai Super Kings",
+            "Royal Challengers Bangalore",
+            "Kolkata Knight Riders",
+            "Sunrisers Hyderabad",
+            "Punjab Kings",
+            "Delhi Capitals",
+            "Rajasthan Royals",
+            "Gujarat Titans",
+            "Lucknow Super Giants"
+        ];
+
+        function predictWinner() {
+            const randomTeam = teams[Math.floor(Math.random() * teams.length)];
+            document.getElementById('winner').textContent = randomTeam;
+            document.getElementById('popup').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('popup').style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <p>The winner of IPL 2025 is :</p>
+        <h1>____</h1>
+        <button>Get Winner</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
